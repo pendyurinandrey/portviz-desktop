@@ -1,0 +1,8 @@
+spring.main.web-application-type: none
+fxweaver.autoscan.basepackages: com.portviz.desktop
+
+portviz:
+  appname: PortViz
+  http:
+    client:
+      connect-timeout-ms: 5000
