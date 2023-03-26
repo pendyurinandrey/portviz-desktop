@@ -1,6 +1,6 @@
 package com.portviz.desktop.context;
 
-import com.portviz.desktop.controllers.PortfolioSummaryController;
+import com.portviz.desktop.controllers.MainScreenController;
 import javafx.scene.Scene;
 import net.rgielen.fxweaver.core.FxWeaver;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,7 +21,7 @@ public class StageInitializer implements ApplicationListener<StageReadyEvent> {
     @Override
     public void onApplicationEvent(StageReadyEvent event) {
         var stage = event.getStage();
-        stage.setScene(new Scene(fxWeaver.loadView(PortfolioSummaryController.class)));
+        stage.setScene(new Scene(fxWeaver.loadView(MainScreenController.class)));
         stage.setTitle(applicationTitle);
         stage.show();
     }
